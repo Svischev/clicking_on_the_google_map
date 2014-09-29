@@ -1,0 +1,24 @@
+<table>
+
+  <thead>
+    <tr>
+      <th>Адрес</th>
+      <th>Координата lat</th>
+      <th>Координата lng</th>
+      <th>Расстояние от указанной точки</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @buildings.each do |building| %>
+      <tr>
+        <td><%= building.address %></td>
+        <td><%= building.coordinate_lat %></td>
+        <td><%= building.coordinate_lng %></td>
+        <td>Расстояние</td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
